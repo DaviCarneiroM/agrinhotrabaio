@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --branco: #FFF;
+    --preto: #000;
+    --cor-principal: #1919dd;
+    --degrade: linear-gradient(111.5deg, rgb(20, 100, 196) 0.4%, rgb(33, 152, 214) 100.2%);
+    --transparente: #0000008e;
+    --cor-formulário: #202020;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+body {
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+}
+  
+/*Contato*/
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: var(--preto);
+}
+
+.contato-conteúdo {
+    width: 30%;
+}
+
+.contato-título {
+    font-size: 3em;
+}
+
+.feedback {
+    color: var(--cor-principal);
+}
+
+.contato-botão {
+    background: var(--cor-principal);
+    color: var(--branco);
+    text-decoration: none;
+    padding: 0.25em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: scale 0.2 ease;
+}
+
+.formulário {
+    background-color: var(--cor-formulário);
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    gap: 2em;
+}
+
+.formulário-nome,
+.formulário-email {
+    background: transparent;
+    border-radius: 0.5em;
+    border: 1px solid;
+    color: var(--branco);
+    padding: 0.5em;
+    width: 100%;
+    outline: none;
+    transition: 0.5s;
+}
+
+.formulário-mensagem {
+    background: transparent;
+    border-radius: 0.5em;
+    border: 1px solid;
+    color: var(--branco);
+    padding: 0.5em;
+    height: 125px;
+    resize: none;
+    outline: none;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.formulário-nome:hover,
+.formulário-email:hover,
+.formulário-mensagem:hover {
+    border-color: var(--cor-principal);
+}
+
+.formulário-enviar {
+    background: transparent;
+    border-radius: 0.5em;
+    color: var(--branco);
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    border: 0.25em solid var(--cor-principal);
+    transition: 0.5s;
+}
+
+.formulário-enviar:hover {
+    background-color: var(--cor-principal);
+}
+
+@media screen and (max-width: 999px) {
+
+     /*Contato*/
+
+     .contato {
+        justify-content: center;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .contato-conteúdo {
+        width: 80%;
+    }
+
+    .contato-título {
+        font-size: 1.5em;
+    }
+
+    .formulário {
+        padding: 2.5em;
+    }
+
+}

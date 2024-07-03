@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Programação - Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <section class="contato" id="contato">
+        <div class="contato-conteúdo">
+            <h2 class="contato-título">Envie o seu <span class="feedback">feedback</span> geral preenchendo os dados no nosso formulário</h2>
+            <a class="contato-botão" href="../index.html">Voltar à tela inicial</a>
+        </div>
+        <div class="contato-conteúdo">
+            <form class="formulário" action="https://formspree.io/f/mvonedjq" method="post">
+                <div class="formulário-item">
+                    <label for="nome">Seu nome:</label>
+                    <input class="formulário-nome" id="nome" name="nome" type="text" placeholder="Digite seu nome" autocomplete="off" required>
+                </div>
+                <div class="formulário-item">
+                    <label for="email">Seu email:</label>
+                    <input class="formulário-email" id="email" type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                </div>
+                <div class="formulário-item">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea class="formulário-mensagem" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" autocomplete="off" required></textarea>
+                </div>
+                <div class="formulário-item">
+                    <input class="formulário-enviar" type="submit" name="enviar" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
